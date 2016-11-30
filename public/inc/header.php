@@ -14,7 +14,9 @@ require_once '../include/functions.php';
 
 	<!-- jQuery et script -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="script.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="assets/js/script.js"></script>
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
