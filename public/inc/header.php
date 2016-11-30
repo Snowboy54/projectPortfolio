@@ -1,8 +1,6 @@
 <?php
-
-	require_once '../include/system/dbConnexion.php';
-	require_once '../include/functions.php';
-
+require_once '../include/system/dbConnexion.php';
+require_once '../include/functions.php';
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +12,36 @@
 
 	<!-- jQuery et script -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 
 	<!-- Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 
 
 </head>
 <body>
+
+	<div class="row">
+		<div class="col-sm-3">
+			<header id="main-header">
+				<nav class="navbar navbar-inverse" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Brand</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Link</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</header>
+		</div>
+		<div class="col-sm-9">

@@ -5,6 +5,10 @@ session_start();
 require_once '../include/system/dbConnexion.php';
 require_once '../include/functions.php';
 
+$head = [
+	'title' => 'Add image to portfolio'
+]
+
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +32,16 @@ require_once '../include/functions.php';
 	<!-- Formulaire d'ajout qui s'affiche lorsque l'on clique sur "Ajouter une image" -->
 	<h2>Télécharger une image</h2>
 	<form>
+		 <div class="form-group">
+    		<label for="title">Titre</label>
+    		<input type="text" class="form-control" id="title" placeholder="Titre">
+  		</div>
+  		<div class="form-group">
+    		<label for="caption">Légende</label>
+    		<textarea id="caption" class="form-control" placeholder="Légende"></textarea>
+  		</div>
 		<div class="form-group">
+
 		    <label for="#add-portfolio">Nouvelle image</label>
 		    <input type="file" id="add-portfolio">
 		    

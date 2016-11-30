@@ -12,10 +12,10 @@ $head = [
 
 $images = getImagesPortfolio();
 
-if(isset($_POST['#add-image'])) {
-	header('add-portfolio.php');
-  	exit();
-}
+// if(isset($_POST['#add-image'])) {
+// 	header('Location: add-portfolio.php');
+//   	exit();
+// }
 
 ?><!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ if(isset($_POST['#add-image'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>$head['title']</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
@@ -41,7 +41,7 @@ if(isset($_POST['#add-image'])) {
 	
 	<?php foreach ($images as $image) : ?>
 		<div>
-			<div><img src="../<?=$image['url']; ?>" alt="<?=$image['title']; ?>"></div>
+			<div><img src="assets/uploads/<?=$image['url']; ?>" alt="<?=$image['title']; ?>"></div>
 			<div><p><?=$image['title']; ?></p></div>
 			<div><p><?=$image['caption']; ?></p></div>
 		</div>
