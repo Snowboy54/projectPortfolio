@@ -21,7 +21,10 @@ $(function () {
 
     });
 
-    function ajaxImage() {
-      /* body... */
-    }
+    $( "#add-image-portfolio" ).on( "click", function() {
+      window.location.href= 'add-portfolio.php';
+
+    });
+
+
 })
