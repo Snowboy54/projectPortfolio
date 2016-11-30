@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+	body {
+		height: 100%;
+	}
+}
+
+
+@media (min-width: 768px) {
+	#main-header {
+		height: 100vh;
+
+		.navbar {
+			max-width:300px;
+			margin:0;
+		}
+
+		.navbar.navbar-inverse {
+			height: 100vh !important;
+
+			.navbar-header {
+				padding: 20px;
+			}
+
+			.navbar-nav,
+			.navbar-nav > li,
+			.navbar-left,
+			.navbar-right,
+			.navbar-header {
+				float:none !important;
+			}
+
+			.collapse.navbar-collapse {
+				border-top: 0;
+				box-shadow: none;
+				max-height: 100vh !important;
+				padding-left:0;
+				padding-right:0;
+			}
+		}
+	}
+}
