@@ -1,16 +1,27 @@
 <?php
 
-	$head = [
+	// Page's title
+	$head = ['title' => "Accueil"];
 
-		'title' => 'Accueil'
+	require_once 'inc/headerFront.php';
 
-	];
+?><!-- PAGE'S CONTENT START -->
 
-	require_once 'inc/header.php';
-?>
-
-<!-- Contenu de la page -->
+<!-- Slider -->
 
 
+<!-- Homepage content -->
+<div class="container">
 
-<?php require_once 'inc/footer.php' ?>
+	<!-- Showing content -->
+	<div><?= showHomepageContent(); ?></div>
+
+</div>
+
+<!-- Map -->
+
+
+
+<!-- PAGE'S CONTENT END -->
+
+<?php require_once 'inc/footerFront.php' ?>

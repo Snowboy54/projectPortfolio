@@ -1,3 +1,16 @@
+/*==========  COLORS  ===========*/
+
+@white: #FFF;
+@lightgrey: #bdc3c7;
+@darkgrey: #222222;
+@black: #121212;
+
+/*=====================================
+=            HEADER SECTION            =
+======================================*/
+
+/*=====  Body  ======*/
+
 html {
 	height: 100%;
 	body {
@@ -5,27 +18,42 @@ html {
 	}
 }
 
+/*=====  Picture and title  ======*/
+
+.header-avatar {
+	margin: 0px auto;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-position: center;
+}
+
+/*=====  Navigation  ======*/
 
 @media (min-width: 768px) {
 	#main-header {
 		height: 100vh;
 
 		.navbar {
-			max-width:300px;
+			background-color: @darkgrey;
 			margin:0;
+			border-radius: 0px;
+		}
+
+		.navbar-brand {
+			text-align: center;
+			width: 100%;
 		}
 
 		.navbar.navbar-inverse {
 			height: 100vh !important;
 
 			.navbar-header {
-				padding: 20px;
+				padding-top: 20px;
 			}
 
 			.navbar-nav,
 			.navbar-nav > li,
-			.navbar-left,
-			.navbar-right,
 			.navbar-header {
 				float:none !important;
 			}
@@ -40,7 +68,6 @@ html {
 		}
 	}
 }
-
 
 
 .sliderImage {
@@ -92,5 +119,86 @@ i {
 			&:hover {
 			color: red;
 		}
+	}
+}
+
+/*===  Back  ====*/
+
+.header-back {
+	padding-bottom: 50px;
+	color: @lightgrey !important;
+
+	i {
+		vertical-align: middle;
+		padding: 0px 5px;
+	}
+
+	a {
+		color: @lightgrey;
+		text-decoration: none;
+
+		&:hover {
+		color: @white;
+		}
+	}
+}
+
+/*===  Hover, Focus, Active  ====*/
+
+.navbar-nav > li {
+	&:hover {
+		background-color: @black;
+	}
+}
+
+/*=====================================
+=            FOOTER SECTION            =
+======================================*/
+
+.footer {
+	padding: 10px 0px;
+	margin: none;
+	text-align: center;
+	background-color: @lightgrey;
+
+	a {
+		color: @darkgrey;
+		text-decoration: none;
+
+	&:hover {
+		color: @white;
+	}
+
+	}
+}
+
+/*========================================
+=            MAIN PAGE SECTION            =
+=========================================*/
+
+/*=====  Homepage  ======*/
+
+.container {
+	width: 85%;
+	margin: 50px auto; 
+}
+
+h3 {
+	margin: 15px 0px;
+}
+
+/*===  Back  ====*/
+
+form {
+	text-align: center;
+	
+	input {
+		margin: 15px;
+		height: 50px;
+		width: 30%;
+	}
+
+	div {
+		margin: 15px;
 	}
 }
