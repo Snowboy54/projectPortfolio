@@ -14,10 +14,13 @@ require_once '../include/functions.php';
 
 	<!-- jQuery et script -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="script.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="assets/js/script.js"></script>
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 
 
@@ -30,14 +33,14 @@ require_once '../include/functions.php';
 				<nav class="navbar navbar-inverse" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#">Brand</a>
+						<a class="navbar-brand" href="index.php">Brand</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
+							<li class="active"><a href="portfolio.php">Portfolio</a></li>
+							<li><a href="slider.php">Slider</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Link</a></li>
